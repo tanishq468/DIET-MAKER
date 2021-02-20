@@ -1,0 +1,673 @@
+a=int(input("Enter your weight in kg\n"))
+b=float(input("Enter your height in cm\n"))
+c=int(input("Enter your age\n"))
+d=input("Enter your gender\n")
+z=d.casefold()
+if z=='men' or 'male' or 'man' or 'boy' or 'm':
+    e=(10*a)+(6.25*b)-(5*c)+5
+    print("Your maintanence calorie is",e)
+    f=input("your goal is weightloss/weightgain\n")
+    x=f.casefold()
+    if x =='weightloss' or 'weight loss' or 'fatloss' or 'fat loss':
+        g=input("veg or non-veg\n")
+        y=g.casefold()
+        if y=='veg' or 'vegetarian':
+            if 1400>=e:
+                print('''1 cup tea(without sugar), 2 marie biscuits
+
+1 stuffed methi roti, 50gm curd
+
+1 apple
+
+2 chapati, (1 med bowl) capsicum veg, (1 med bowl) dal, (1 med bowl) salad
+
+1 cup milk, 1 small bowl roasted chana
+
+2 chapati, (1 med bowl) lauki veg, 50g curd
+''')
+            if 1400<e<=1700:
+                print('''Lukewarm Water with Lemon 1 glass
+
+Tea without Sugar + 2 Biscuits
+
+2 Rotis + 1/2 cup Paneer Curry
+
+1 Banana/ 1/2 cup Melon /20 Grapes
+
+Brown Rice 1 cup (195 gm) + Mixed Vegetables 1/2 cup + Salad 1 bowl + Raita 1 small bowl
+
+Butter Milk 1 cup	
+
+2 Rotis + Vegetable Soup 1 bowl + Salad 1 bowl
+''')
+            elif 1700<e<=2000:
+                print('''Milk/Tea 1 Cup + Brown bread with Salad filling 
+
+Sprouts or roasted gram (10gms)
+
+Vegetable Salad + 2 small Chapatis with dal or vegetable curry + 1 cup (150ml) curd.
+
+1 Fruit (either Apple or Pear)
+
+Vegetable Salad + 2 small Chapatis with dal or vegetable curry + 1 cup (150ml) curd.
+
+Drink a glass of warm milk''')
+            elif 2000<e<=2300:
+                print('''1 cup(250ml) milk-no sugar
+
+2 dosa(plain) , peanut chutney(2 tbsp)
+
+small banana/apple , roasted peanut/sunflower seeds(2 tbsp)
+
+3 roti (thin small), dal or any beans sabji(for eg:-rajma),curd(skim)(1/2 cup)
+
+1 cup(250ml) milk-no sugar, 4-6 Almonds and walnuts and cashew,papaya(1 cup) or mango(1/2 cup)
+
+1 cup khichdi(brown rice or steelcut oats),curd(1/2 cup),spinach/methi sabji(1 cup)
+''')
+            elif 2300<e<=2500:
+                print('''1 cup tea coffee, 1 cup poha, fruit(100-150g)
+
+1 cup sprouts
+
+3 roti, 1/2 cup rice,1 cup green vegetable,1 cup dal, 1 cup curd, 1 cup salad
+
+1 cup coffee, veggie rawa Appam
+
+5-6 almonds and walnuts
+
+1 and 1/2 cup Brown Rice/ Pulao/ Khichdi, 1 cup Vegetable(Any Gourd vegetable),1 cup dal, 1 cup masala buttermilk''')
+            else:
+                print('''1 Glass toned milk + 10 Almonds + 5 Walnuts
+
+2 Chapati + Paneer Sabji
+
+1 banana or apple
+
+2 Cup rice + A bowl green vegetable sabji + Paneer curry
+
+Fruit of your choice
+
+Coffee + 2 cookies
+
+3 Roti + 1 cup sabji ''')
+        else:
+            if 1400>=e:
+                print('''1 cup tea(without sugar), 2 marie biscuits
+
+1 stuffed methi roti, 50gm curd
+
+1 apple
+
+2 chapati, (1 med bowl) capsicum veg, (1 med bowl) chicken, (1 med bowl) salad
+
+1 cup milk, 1 small bowl roasted chana
+
+2 chapati, (1 med bowl) lauki veg, 50g curd
+''')
+            if 1400<e<=1700:
+                print('''Lukewarm Water with Lemon 1 glass
+
+Tea without Sugar + 2 Biscuits
+
+2 Scrambled Eggs + 1 Slice Brown Bread+ Skimmed Milk 1 cup(240 gm)
+
+1 Banana/ 1/2 cup Melon /20 Grapes
+
+Brown Rice 1 cup(195 gm) + Chicken(100 gm) + Mixed Vegetables 1/2 cup + Salad 1 Bowl
+
+Butter Milk 1 cup
+
+1 Roti + Fish(50 gm) + Lentils Dal 1/2 cup+ Raita 1 small bowl
+''')
+            elif 1700<e<=2000:
+                print('''Omlette (2 Eggs), 1 Slice of multigrain toast with a slice of low-fat cheese, a cup of Black Coffee
+
+1 cup Yogurt, 1/2 cup strawberries, 1/2 apple, 1 tsp flaxseeds, 5 or 6 almonds and 5 or 6 walnuts. 
+
+150gms roasted/smoked chicken pieces, 6 tomato slices, 1 small apple, chopped olives (30g), 3 tbsp olive oil, 1 cup greens (spinach, lettuce), a slice of multigrain toast and some vinaigrette
+
+1 cup sprouts with salt, pepper and lemon to taste and a small mocha latte.
+
+1 cup tomato soup, 200g steamed basa fish, 1 cup grilled vegetables.
+
+Have a glass of warm milk''')
+            elif 2000<e<=2300:
+                print('''Two eggs (scrambled),One slice 100% whole-grain toast with one tablespoon 100% fruit spread,one apple
+
+Chicken wrap: (One whole grain tortilla, one-half cup chopped chicken, three tomato slices, one tablespoon light mayonnaise, lots of lettuce, and one ounce shredded cheese), One cup milk
+
+3/4 cup plain yogurt with 1 tbsp honey,1/2 cup raw carrots,14 walnut halves,1 cup 100% grapefruit juice
+
+One three-ounce sirloin steak,One cup cooked green beans,One medium sweet potato(baked)''')
+            elif 2300<e<=2500:
+                print('''1 cup tea coffee, 1 cup poha, fruit(100-150g)
+
+2 eggs (Boiled/ Scrambled/ Omelette/ Bhurji)
+
+3 roti, 1/2 cup rice,1 cup green vegetable,100g chicken or fish, 1 cup curd, 1 cup salad
+
+1 cup coffee, veggie rawa Appam
+
+5-6 almonds and walnuts
+
+1 and 1/2 cup Brown Rice/ Pulao/ Khichdi, 1 cup Vegetable(Any Gourd vegetable),1 cup dal, 1 cup masala buttermilk
+''')
+            else:
+                print('''1 Glass toned milk + 10 Almonds + 5 Walnuts
+
+4 Bread toast + 4 eggs, scrambled + 2 Banana
+
+1 banana or apple
+
+3 Roti + A bowl dal + 1 bowl chicken curry
+
+Fruit of your choice
+
+Apple with peanut butter
+
+3 Roti + 1 cup sabji ''')
+    else:
+        g=input("veg or non-veg\n")
+        y=g.casefold()
+        if y=='veg' or 'vegetarian':
+            if 1400>=e:
+                print('''1 cup(250ml) milk-no sugar
+
+2 dosa(plain) , peanut chutney(2 tbsp)
+
+small banana/apple , roasted peanut/sunflower seeds(2 tbsp)
+
+3 roti (thin small), dal or any beans sabji(for eg:-rajma),curd(skim)(1/2 cup)
+
+1 cup(250ml) milk-no sugar, 4-6 Almonds and walnuts and cashew,papaya(1 cup) or mango(1/2 cup)
+
+1 cup khichdi(brown rice or steelcut oats),curd(1/2 cup),spinach/methi sabji(1 cup)''')
+            if 1400<e<=1700:
+                print('''1 cup tea coffee, 1 cup poha, fruit(100-150g)
+
+1 cup sprouts
+
+3 roti, 1/2 cup rice,1 cup green vegetable,1 cup dal, 1 cup curd, 1 cup salad
+
+1 cup coffee, veggie rawa Appam
+
+5-6 almonds and walnuts
+
+1 and 1/2 cup Brown Rice/ Pulao/ Khichdi, 1 cup Vegetable(Any Gourd vegetable),1 cup dal, 1 cup masala buttermilk''')
+            elif 1700<e<=2000:
+                print('''1 Glass toned milk + 10 Almonds + 5 Walnuts
+
+2 Chapati + Paneer Sabji
+
+1 banana or apple
+
+2 Cup rice + A bowl green vegetable sabji + Paneer curry
+
+Fruit of your choice
+
+Coffee + 2 cookies
+
+3 Roti + 1 cup sabji ''')
+            elif 2000<e<=2300:
+                print('''1 Glass toned milk + 10 Almonds + 5 Walnuts
+
+2 Chapati + Paneer Sabji
+
+1 banana or apple
+
+2 Cup rice + A bowl green vegetable sabji + Paneer curry
+
+Fruit of your choice
+
+Coffee + 2 cookies
+
+3 Roti + 1 cup sabji + 1 cup dal
+
+A cup of mix nuts.''')
+            elif 2300<e<=2500:
+                print('''1 glass Toned Milk +5 Almonds (Soaked) +5 Walnuts
+
+2 bowl dalia, 2 banana
+
+1 glass banana shake + 5 almonds
+
+mass gainer(1 serving) with milk
+
+3 roti + 1cup rice,1 cup paneer curry, 1 cup potato with curd, 1 quarter plate green salad,1 glass fruit juice
+
+3 roti, 2 cup dal,1 cup seasonal vegetable
+
+1 glass banana shake + 5 almonds
+''')
+            else:
+                print('''300ml milk, 4 cookies 
+
+100g oats, 100g paneer, 1 large apple
+
+15-20g walnuts and almonds, 1 banana, 300ml milk
+
+150g brown rice, 150g dal, 100g curd
+
+1 cup tea(with sugar), 4 cookies, 20g almonds
+
+200g green vegetables,100g homemade paneer
+
+300ml milk, 200g vegetable with potatoes(cooked)
+''')
+        else:
+            if 1400>=e:
+                print('''Two eggs (scrambled),One slice 100% whole-grain toast with one tablespoon 100% fruit spread,one apple
+
+Chicken wrap: (One whole grain tortilla, one-half cup chopped chicken, three tomato slices, one tablespoon light mayonnaise, lots of lettuce, and one ounce shredded cheese), One cup milk
+
+3/4 cup plain yogurt with 1 tbsp honey,1/2 cup raw carrots,14 walnut halves,1 cup 100% grapefruit juice
+
+One three-ounce sirloin steak,One cup cooked green beans,One medium sweet potato(baked)
+''')
+            if 1400<e<=1700:
+                print('''1 cup tea coffee, 1 cup poha, fruit(100-150g)
+
+2 eggs (Boiled/ Scrambled/ Omelette/ Bhurji)
+
+3 roti, 1/2 cup rice,1 cup green vegetable,100g chicken or fish, 1 cup curd, 1 cup salad
+
+1 cup coffee, veggie rawa Appam
+
+5-6 almonds and walnuts
+
+1 and 1/2 cup Brown Rice/ Pulao/ Khichdi, 1 cup Vegetable(Any Gourd vegetable),1 cup dal, 1 cup masala buttermilk
+''')
+            elif 1700<e<=2000:
+                print('''1 Glass toned milk + 10 Almonds + 5 Walnuts
+
+4 Bread toast + 4 eggs, scrambled + 2 Banana
+
+1 banana or apple
+
+3 Roti + A bowl dal + 1 bowl chicken curry
+
+Fruit of your choice
+
+Apple with peanut butter
+
+3 Roti + 1 cup sabji ''')
+            elif 2000<e<=2300:
+                print('''1 Glass toned milk + 10 Almonds + 5 Walnuts
+
+4 Bread toast + 4 eggs, scrambled + 2 Banana
+
+1 banana or apple
+
+3 Roti + A bowl dal + 1 bowl chicken curry
+
+Fruit of your choice
+
+Apple with peanut butter
+
+3 Roti + 1 cup sabji + 2 slices of chicken
+
+A cup of mix nuts.
+''')
+            elif 2300<e<=2500:
+                print('''1 glass Toned Milk +5 Almonds (Soaked) +5 Walnuts
+
+2 bowl dalia, 2 banana
+
+1 glass banana shake + 5 almonds
+
+mass gainer(1 serving) with milk
+
+3 roti + 1cup rice,1 cup paneer curry, 1 cup potato with curd, 1 quarter plate green salad,1 glass fruit juice
+
+3 roti, 200gm chicken,1 cup seasonal vegetable
+
+1 glass banana shake + 5 almonds''')
+            else:
+                print('''300ml milk, 4 cookies 
+
+100g oats, 100g paneer, 1 large apple
+
+15-20g walnuts and almonds, 1 banana, 300ml milk
+
+150g brown rice, 150g chicken, 100g curd
+
+1 cup tea(with sugar), 4 cookies, 20g almonds
+
+200g green vegetables,100g homemade paneer
+
+300ml milk, 200g vegetable with potatoes(cooked)''')
+else:
+    e=(10*a)+(6.25*b)-(5*c)-161
+    print("Your maintanence calorie is",e)
+    f=input("your goal is weightloss/weightgain\n")
+    x=f.casefold()
+    if x =='weightloss' or 'weight loss' or 'fatloss' or 'fat loss':
+        g=input("veg or non-veg\n")
+        y=g.casefold()
+        if y=='veg' or 'vegetarian':
+            if 1400>=e:
+                print('''1 cup tea(without sugar), 2 marie biscuits
+
+1 stuffed methi roti, 50gm curd
+
+1 apple
+
+2 chapati, (1 med bowl) capsicum veg, (1 med bowl) dal, (1 med bowl) salad
+
+1 cup milk, 1 small bowl roasted chana
+
+2 chapati, (1 med bowl) lauki veg, 50g curd
+''')
+            if 1400<e<=1700:
+                print('''Lukewarm Water with Lemon 1 glass
+
+Tea without Sugar + 2 Biscuits
+
+2 Rotis + 1/2 cup Paneer Curry
+
+1 Banana/ 1/2 cup Melon /20 Grapes
+
+Brown Rice 1 cup (195 gm) + Mixed Vegetables 1/2 cup + Salad 1 bowl + Raita 1 small bowl
+
+Butter Milk 1 cup	
+
+2 Rotis + Vegetable Soup 1 bowl + Salad 1 bowl
+''')
+            elif 1700<e<=2000:
+                print('''Milk/Tea 1 Cup + Brown bread with Salad filling 
+
+Sprouts or roasted gram (10gms)
+
+Vegetable Salad + 2 small Chapatis with dal or vegetable curry + 1 cup (150ml) curd.
+
+1 Fruit (either Apple or Pear)
+
+Vegetable Salad + 2 small Chapatis with dal or vegetable curry + 1 cup (150ml) curd.
+
+Drink a glass of warm milk''')
+            elif 2000<e<=2300:
+                print('''1 cup(250ml) milk-no sugar
+
+2 dosa(plain) , peanut chutney(2 tbsp)
+
+small banana/apple , roasted peanut/sunflower seeds(2 tbsp)
+
+3 roti (thin small), dal or any beans sabji(for eg:-rajma),curd(skim)(1/2 cup)
+
+1 cup(250ml) milk-no sugar, 4-6 Almonds and walnuts and cashew,papaya(1 cup) or mango(1/2 cup)
+
+1 cup khichdi(brown rice or steelcut oats),curd(1/2 cup),spinach/methi sabji(1 cup)
+''')
+            elif 2300<e<=2500:
+                print('''1 cup tea coffee, 1 cup poha, fruit(100-150g)
+
+1 cup sprouts
+
+3 roti, 1/2 cup rice,1 cup green vegetable,1 cup dal, 1 cup curd, 1 cup salad
+
+1 cup coffee, veggie rawa Appam
+
+5-6 almonds and walnuts
+
+1 and 1/2 cup Brown Rice/ Pulao/ Khichdi, 1 cup Vegetable(Any Gourd vegetable),1 cup dal, 1 cup masala buttermilk''')
+            else:
+                print('''1 Glass toned milk + 10 Almonds + 5 Walnuts
+
+2 Chapati + Paneer Sabji
+
+1 banana or apple
+
+2 Cup rice + A bowl green vegetable sabji + Paneer curry
+
+Fruit of your choice
+
+Coffee + 2 cookies
+
+3 Roti + 1 cup sabji ''')
+        else:
+            if 1400>=e:
+                print('''1 cup tea(without sugar), 2 marie biscuits
+
+1 stuffed methi roti, 50gm curd
+
+1 apple
+
+2 chapati, (1 med bowl) capsicum veg, (1 med bowl) chicken, (1 med bowl) salad
+
+1 cup milk, 1 small bowl roasted chana
+
+2 chapati, (1 med bowl) lauki veg, 50g curd
+''')
+            if 1400<e<=1700:
+                print('''Lukewarm Water with Lemon 1 glass
+
+Tea without Sugar + 2 Biscuits
+
+2 Scrambled Eggs + 1 Slice Brown Bread+ Skimmed Milk 1 cup(240 gm)
+
+1 Banana/ 1/2 cup Melon /20 Grapes
+
+Brown Rice 1 cup(195 gm) + Chicken(100 gm) + Mixed Vegetables 1/2 cup + Salad 1 Bowl
+
+Butter Milk 1 cup
+
+1 Roti + Fish(50 gm) + Lentils Dal 1/2 cup+ Raita 1 small bowl
+''')
+            elif 1700<e<=2000:
+                print('''Omlette (2 Eggs), 1 Slice of multigrain toast with a slice of low-fat cheese, a cup of Black Coffee
+
+1 cup Yogurt, 1/2 cup strawberries, 1/2 apple, 1 tsp flaxseeds, 5 or 6 almonds and 5 or 6 walnuts. 
+
+150gms roasted/smoked chicken pieces, 6 tomato slices, 1 small apple, chopped olives (30g), 3 tbsp olive oil, 1 cup greens (spinach, lettuce), a slice of multigrain toast and some vinaigrette
+
+1 cup sprouts with salt, pepper and lemon to taste and a small mocha latte.
+
+1 cup tomato soup, 200g steamed basa fish, 1 cup grilled vegetables.
+
+Have a glass of warm milk''')
+            elif 2000<e<=2300:
+                print('''Two eggs (scrambled),One slice 100% whole-grain toast with one tablespoon 100% fruit spread,one apple
+
+Chicken wrap: (One whole grain tortilla, one-half cup chopped chicken, three tomato slices, one tablespoon light mayonnaise, lots of lettuce, and one ounce shredded cheese), One cup milk
+
+3/4 cup plain yogurt with 1 tbsp honey,1/2 cup raw carrots,14 walnut halves,1 cup 100% grapefruit juice
+
+One three-ounce sirloin steak,One cup cooked green beans,One medium sweet potato(baked)''')
+            elif 2300<e<=2500:
+                print('''1 cup tea coffee, 1 cup poha, fruit(100-150g)
+
+2 eggs (Boiled/ Scrambled/ Omelette/ Bhurji)
+
+3 roti, 1/2 cup rice,1 cup green vegetable,100g chicken or fish, 1 cup curd, 1 cup salad
+
+1 cup coffee, veggie rawa Appam
+
+5-6 almonds and walnuts
+
+1 and 1/2 cup Brown Rice/ Pulao/ Khichdi, 1 cup Vegetable(Any Gourd vegetable),1 cup dal, 1 cup masala buttermilk
+''')
+            else:
+                print('''1 Glass toned milk + 10 Almonds + 5 Walnuts
+
+4 Bread toast + 4 eggs, scrambled + 2 Banana
+
+1 banana or apple
+
+3 Roti + A bowl dal + 1 bowl chicken curry
+
+Fruit of your choice
+
+Apple with peanut butter
+
+3 Roti + 1 cup sabji ''')
+    else:
+        g=input("veg or non-veg\n")
+        y=g.casefold()
+        if y=='veg' or 'vegetarian':
+            if 1400>=e:
+                print('''1 cup(250ml) milk-no sugar
+
+2 dosa(plain) , peanut chutney(2 tbsp)
+
+small banana/apple , roasted peanut/sunflower seeds(2 tbsp)
+
+3 roti (thin small), dal or any beans sabji(for eg:-rajma),curd(skim)(1/2 cup)
+
+1 cup(250ml) milk-no sugar, 4-6 Almonds and walnuts and cashew,papaya(1 cup) or mango(1/2 cup)
+
+1 cup khichdi(brown rice or steelcut oats),curd(1/2 cup),spinach/methi sabji(1 cup)''')
+            if 1400<e<=1700:
+                print('''1 cup tea coffee, 1 cup poha, fruit(100-150g)
+
+1 cup sprouts
+
+3 roti, 1/2 cup rice,1 cup green vegetable,1 cup dal, 1 cup curd, 1 cup salad
+
+1 cup coffee, veggie rawa Appam
+
+5-6 almonds and walnuts
+
+1 and 1/2 cup Brown Rice/ Pulao/ Khichdi, 1 cup Vegetable(Any Gourd vegetable),1 cup dal, 1 cup masala buttermilk''')
+            elif 1700<e<=2000:
+                print('''1 Glass toned milk + 10 Almonds + 5 Walnuts
+
+2 Chapati + Paneer Sabji
+
+1 banana or apple
+
+2 Cup rice + A bowl green vegetable sabji + Paneer curry
+
+Fruit of your choice
+
+Coffee + 2 cookies
+
+3 Roti + 1 cup sabji ''')
+            elif 2000<e<=2300:
+                print('''1 Glass toned milk + 10 Almonds + 5 Walnuts
+
+2 Chapati + Paneer Sabji
+
+1 banana or apple
+
+2 Cup rice + A bowl green vegetable sabji + Paneer curry
+
+Fruit of your choice
+
+Coffee + 2 cookies
+
+3 Roti + 1 cup sabji + 1 cup dal
+
+A cup of mix nuts.''')
+            elif 2300<e<=2500:
+                print('''1 glass Toned Milk +5 Almonds (Soaked) +5 Walnuts
+
+2 bowl dalia, 2 banana
+
+1 glass banana shake + 5 almonds
+
+mass gainer(1 serving) with milk
+
+3 roti + 1cup rice,1 cup paneer curry, 1 cup potato with curd, 1 quarter plate green salad,1 glass fruit juice
+
+3 roti, 2 cup dal,1 cup seasonal vegetable
+
+1 glass banana shake + 5 almonds
+''')
+            else:
+                print('''300ml milk, 4 cookies 
+
+100g oats, 100g paneer, 1 large apple
+
+15-20g walnuts and almonds, 1 banana, 300ml milk
+
+150g brown rice, 150g dal, 100g curd
+
+1 cup tea(with sugar), 4 cookies, 20g almonds
+
+200g green vegetables,100g homemade paneer
+
+300ml milk, 200g vegetable with potatoes(cooked)
+''')
+        else:
+            if 1400>=e:
+                print('''Two eggs (scrambled),One slice 100% whole-grain toast with one tablespoon 100% fruit spread,one apple
+
+Chicken wrap: (One whole grain tortilla, one-half cup chopped chicken, three tomato slices, one tablespoon light mayonnaise, lots of lettuce, and one ounce shredded cheese), One cup milk
+
+3/4 cup plain yogurt with 1 tbsp honey,1/2 cup raw carrots,14 walnut halves,1 cup 100% grapefruit juice
+
+One three-ounce sirloin steak,One cup cooked green beans,One medium sweet potato(baked)
+''')
+            if 1400<e<=1700:
+                print('''1 cup tea coffee, 1 cup poha, fruit(100-150g)
+
+2 eggs (Boiled/ Scrambled/ Omelette/ Bhurji)
+
+3 roti, 1/2 cup rice,1 cup green vegetable,100g chicken or fish, 1 cup curd, 1 cup salad
+
+1 cup coffee, veggie rawa Appam
+
+5-6 almonds and walnuts
+
+1 and 1/2 cup Brown Rice/ Pulao/ Khichdi, 1 cup Vegetable(Any Gourd vegetable),1 cup dal, 1 cup masala buttermilk
+''')
+            elif 1700<e<=2000:
+                print('''1 Glass toned milk + 10 Almonds + 5 Walnuts
+
+4 Bread toast + 4 eggs, scrambled + 2 Banana
+
+1 banana or apple
+
+3 Roti + A bowl dal + 1 bowl chicken curry
+
+Fruit of your choice
+
+Apple with peanut butter
+
+3 Roti + 1 cup sabji ''')
+            elif 2000<e<=2300:
+                print('''1 Glass toned milk + 10 Almonds + 5 Walnuts
+
+4 Bread toast + 4 eggs, scrambled + 2 Banana
+
+1 banana or apple
+
+3 Roti + A bowl dal + 1 bowl chicken curry
+
+Fruit of your choice
+
+Apple with peanut butter
+
+3 Roti + 1 cup sabji + 2 slices of chicken
+
+A cup of mix nuts.
+''')
+            elif 2300<e<=2500:
+                print('''1 glass Toned Milk +5 Almonds (Soaked) +5 Walnuts
+
+2 bowl dalia, 2 banana
+
+1 glass banana shake + 5 almonds
+
+mass gainer(1 serving) with milk
+
+3 roti + 1cup rice,1 cup paneer curry, 1 cup potato with curd, 1 quarter plate green salad,1 glass fruit juice
+
+3 roti, 200gm chicken,1 cup seasonal vegetable
+
+1 glass banana shake + 5 almonds''')
+            else:
+                print('''300ml milk, 4 cookies 
+
+100g oats, 100g paneer, 1 large apple
+
+15-20g walnuts and almonds, 1 banana, 300ml milk
+
+150g brown rice, 150g chicken, 100g curd
+
+1 cup tea(with sugar), 4 cookies, 20g almonds
+
+200g green vegetables,100g homemade paneer
+
+300ml milk, 200g vegetable with potatoes(cooked)''')
